@@ -1,2 +1,2 @@
 from ._coinTelegraphLinks import _gather_ct_links as coin_telegraph_start_urls
-from ._coinTelegraphLinks import _gather_ct_links as coin_desk_start_urls
+from ._coinDeskLinks import _gather_cd_links as coin_desk_start_urls

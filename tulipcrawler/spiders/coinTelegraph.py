@@ -5,7 +5,10 @@ from .utils import coin_telegraph_start_urls
 
 class CoinTelegraphSpider(scrapy.Spider):
     name = 'CoinTelegraphSpider'
-    start_urls = coin_telegraph_start_urls()
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.start_urls = coin_telegraph_start_urls()
 
     def parse(self, response, **kwargs):
         try:
@@ -39,5 +42,3 @@ class CoinTelegraphSpider(scrapy.Spider):
             'body': ' '.join(response.css('.post-content *::text').getall()),
             'url': response.url
         }
-
-
