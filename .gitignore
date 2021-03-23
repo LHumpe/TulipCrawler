@@ -4,3 +4,5 @@
 # PyCharm Config
 .idea/
 
+# Local Data Folder
+/local_output/
