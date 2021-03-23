@@ -4,5 +4,8 @@
 # PyCharm Config
 .idea/
 
+# Python Caches
+*__pycache__/
+
 # Local Data Folder
 /local_output/
